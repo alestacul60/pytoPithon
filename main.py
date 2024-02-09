@@ -14,7 +14,7 @@ class Image(pygame.sprite.Sprite):
         self.image.blit(pygame.transform.scale(original_image, (original_image.get_width() // 4, original_image.get_height() // 4)), (0, 0))
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(0, 800), random.randint(0, 600))
-        self.speed_factor = speed_factor  # Factor de velocidad ajustable
+        self.speed_factor = speed_factor  
         self.last_clone_time = 0 
 
     def update(self):
